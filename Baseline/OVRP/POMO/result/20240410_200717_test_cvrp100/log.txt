@@ -1,0 +1,22 @@
+[2024-04-10 19:07:20] test_n100.py(106) : DEBUG_MODE: False
+[2024-04-10 19:07:20] test_n100.py(107) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2024-04-10 19:07:20] test_n100.py(108) : env_params{'problem_type': 'OVRP', 'problem_size': 100, 'pomo_size': 100}
+[2024-04-10 19:07:20] test_n100.py(108) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'argmax'}
+[2024-04-10 19:07:20] test_n100.py(108) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'model_load': {'path': './result', 'epoch': 2000}, 'test_episodes': 5000, 'test_batch_size': 400, 'augmentation_enable': True, 'aug_factor': 8, 'aug_batch_size': 400, 'test_data_load': {'enable': True, 'filename': '../../../Test_instances/data_OVRP_100_5000.pt'}}
+[2024-04-10 19:07:20] test_n100.py(108) : logger_params{'log_file': {'desc': 'test_cvrp100', 'filename': 'log.txt', 'filepath': './result/20240410_200717_test_cvrp100'}}
+[2024-04-10 19:07:25] VRPTester.py(82) : episode 400/5000, Elapsed[0.08m], Remain[0.91m], score:10.218, aug_score:10.038
+[2024-04-10 19:07:29] VRPTester.py(82) : episode 800/5000, Elapsed[0.15m], Remain[0.80m], score:10.298, aug_score:10.127
+[2024-04-10 19:07:33] VRPTester.py(82) : episode 1200/5000, Elapsed[0.23m], Remain[0.72m], score:10.300, aug_score:10.140
+[2024-04-10 19:07:38] VRPTester.py(82) : episode 1600/5000, Elapsed[0.30m], Remain[0.64m], score:10.290, aug_score:10.117
+[2024-04-10 19:07:42] VRPTester.py(82) : episode 2000/5000, Elapsed[0.38m], Remain[0.56m], score:10.346, aug_score:10.182
+[2024-04-10 19:07:47] VRPTester.py(82) : episode 2400/5000, Elapsed[0.45m], Remain[0.49m], score:10.216, aug_score:10.051
+[2024-04-10 19:07:51] VRPTester.py(82) : episode 2800/5000, Elapsed[0.52m], Remain[0.41m], score:10.321, aug_score:10.140
+[2024-04-10 19:07:56] VRPTester.py(82) : episode 3200/5000, Elapsed[0.60m], Remain[0.34m], score:10.306, aug_score:10.141
+[2024-04-10 19:08:00] VRPTester.py(82) : episode 3600/5000, Elapsed[0.67m], Remain[0.26m], score:10.239, aug_score:10.073
+[2024-04-10 19:08:05] VRPTester.py(82) : episode 4000/5000, Elapsed[0.75m], Remain[0.19m], score:10.353, aug_score:10.179
+[2024-04-10 19:08:09] VRPTester.py(82) : episode 4400/5000, Elapsed[0.82m], Remain[0.11m], score:10.213, aug_score:10.056
+[2024-04-10 19:08:14] VRPTester.py(82) : episode 4800/5000, Elapsed[0.90m], Remain[0.04m], score:10.303, aug_score:10.136
+[2024-04-10 19:08:16] VRPTester.py(82) : episode 5000/5000, Elapsed[0.94m], Remain[0.00m], score:10.221, aug_score:10.040
+[2024-04-10 19:08:16] VRPTester.py(88) :  *** Test Done *** 
+[2024-04-10 19:08:16] VRPTester.py(89) :  NO-AUG SCORE: 10.2810 
+[2024-04-10 19:08:16] VRPTester.py(90) :  AUGMENTATION SCORE: 10.1121 

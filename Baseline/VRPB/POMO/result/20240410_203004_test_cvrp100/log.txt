@@ -1,0 +1,6 @@
+[2024-04-10 19:30:07] test_n100.py(105) : DEBUG_MODE: False
+[2024-04-10 19:30:07] test_n100.py(106) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2024-04-10 19:30:07] test_n100.py(107) : env_params{'problem_type': 'VRPB', 'problem_size': 100, 'pomo_size': 100}
+[2024-04-10 19:30:07] test_n100.py(107) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'argmax'}
+[2024-04-10 19:30:07] test_n100.py(107) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'model_load': {'path': './result', 'epoch': 2000}, 'test_episodes': 2000, 'test_batch_size': 400, 'augmentation_enable': True, 'aug_factor': 8, 'aug_batch_size': 400, 'test_data_load': {'enable': False, 'filename': '../vrp100_test_seed1234.pt'}}
+[2024-04-10 19:30:07] test_n100.py(107) : logger_params{'log_file': {'desc': 'test_cvrp100', 'filename': 'log.txt', 'filepath': './result/20240410_203004_test_cvrp100'}}

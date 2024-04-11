@@ -1,0 +1,17 @@
+[2024-04-10 19:35:40] test_n100.py(106) : DEBUG_MODE: False
+[2024-04-10 19:35:40] test_n100.py(107) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2024-04-10 19:35:40] test_n100.py(108) : env_params{'problem_type': 'VRPTW', 'problem_size': 100, 'pomo_size': 100}
+[2024-04-10 19:35:40] test_n100.py(108) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'argmax'}
+[2024-04-10 19:35:40] test_n100.py(108) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'model_load': {'path': './result', 'epoch': 2000}, 'test_episodes': 64, 'test_batch_size': 8, 'augmentation_enable': True, 'aug_factor': 8, 'aug_batch_size': 8, 'test_data_load': {'enable': True, 'filename': '../../../Test_instances/data_VRPTW_100_5000.pt'}}
+[2024-04-10 19:35:40] test_n100.py(108) : logger_params{'log_file': {'desc': 'test_cvrp100', 'filename': 'log.txt', 'filepath': './result/20240410_203537_test_cvrp100'}}
+[2024-04-10 19:35:41] VRPTester.py(82) : episode   8/ 64, Elapsed[0.01m], Remain[0.06m], score:27.467, aug_score:27.012
+[2024-04-10 19:35:41] VRPTester.py(82) : episode  16/ 64, Elapsed[0.01m], Remain[0.04m], score:25.826, aug_score:25.363
+[2024-04-10 19:35:41] VRPTester.py(82) : episode  24/ 64, Elapsed[0.02m], Remain[0.03m], score:27.681, aug_score:27.175
+[2024-04-10 19:35:42] VRPTester.py(82) : episode  32/ 64, Elapsed[0.03m], Remain[0.03m], score:27.574, aug_score:27.040
+[2024-04-10 19:35:42] VRPTester.py(82) : episode  40/ 64, Elapsed[0.03m], Remain[0.02m], score:31.015, aug_score:30.467
+[2024-04-10 19:35:42] VRPTester.py(82) : episode  48/ 64, Elapsed[0.04m], Remain[0.01m], score:25.720, aug_score:25.335
+[2024-04-10 19:35:43] VRPTester.py(82) : episode  56/ 64, Elapsed[0.04m], Remain[0.01m], score:26.879, aug_score:26.471
+[2024-04-10 19:35:43] VRPTester.py(82) : episode  64/ 64, Elapsed[0.05m], Remain[0.00m], score:27.158, aug_score:26.980
+[2024-04-10 19:35:43] VRPTester.py(88) :  *** Test Done *** 
+[2024-04-10 19:35:43] VRPTester.py(89) :  NO-AUG SCORE: 27.4150 
+[2024-04-10 19:35:43] VRPTester.py(90) :  AUGMENTATION SCORE: 26.9803 
