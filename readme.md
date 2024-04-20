@@ -8,15 +8,11 @@ A comparison of gaps on eleven VRPs (Left: box plot, Right: radar plot). **ST** 
 
 Please cite the paper https://arxiv.org/abs/2402.16891, if you find the code helpful, 
 
-@article{liu2024multi,
-
-  title={Multi-Task Learning for Routing Problem with Cross-Problem Zero-Shot Generalization},
-  
-  author={Liu, Fei and Lin, Xi and Zhang, Qingfu and Tong, Xialiang and Yuan, Mingxuan},
-  
-  journal={arXiv preprint arXiv:2402.16891},
-  
-  year={2024}
+@article{liu2024multi, \
+  title={Multi-Task Learning for Routing Problem with Cross-Problem Zero-Shot Generalization}, \
+  author={Liu, Fei and Lin, Xi and Zhang, Qingfu and Tong, Xialiang and Yuan, Mingxuan}, \
+  journal={arXiv preprint arXiv:2402.16891}, \
+  year={2024} \
 }
 
 ## Files in MTNCO
