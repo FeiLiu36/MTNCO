@@ -11,7 +11,7 @@ Please cite the paper https://arxiv.org/abs/2402.16891, if you find the code hel
 @article{liu2024multi, \
     title={Multi-Task Learning for Routing Problem with Cross-Problem Zero-Shot Generalization}, \
     author={Liu, Fei and Lin, Xi and Zhang, Qingfu and Tong, Xialiang and Yuan, Mingxuan}, \
-    journal={arXiv preprint arXiv:2402.16891}, \
+    journal={International Conference on Knowledge Discovery and Data Mining (KDD)}, \
     year={2024} \
 }
 
