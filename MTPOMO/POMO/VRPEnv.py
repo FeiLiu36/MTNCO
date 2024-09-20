@@ -1,8 +1,9 @@
 
 from dataclasses import dataclass
 import torch
+from numba.cuda.cudadrv.enums import CUDA_ERROR_ASSERT
 
-from VRProblemDef import get_random_problems_mixed, augment_xy_data_by_8_fold
+from MTPOMO.VRProblemDef import get_random_problems_mixed, augment_xy_data_by_8_fold
 
 
 @dataclass
@@ -236,6 +237,8 @@ class VRPEnv:
         # shape: (batch, pomo)
         self.length = 3.0*torch.ones(size=(self.batch_size, self.pomo_size))
         # # shape: (batch, pomo)
+        self.route_open = torch.zeros((self.batch_size, self.pomo_size))
+        # shape: (batch, pomo)
         self.visited_ninf_flag = torch.zeros(size=(self.batch_size, self.pomo_size, self.problem_size+1))
         # shape: (batch, pomo, problem+1)
         self.ninf_mask = torch.zeros(size=(self.batch_size, self.pomo_size, self.problem_size+1))
@@ -283,7 +286,10 @@ class VRPEnv:
         # shape: (batch, pomo, problem+1)
         gathering_index = selected[:, :, None]
         # shape: (batch, pomo, 1)
-        selected_demand = demand_list.gather(dim=2, index=gathering_index).squeeze(dim=2)
+        try:
+            selected_demand = demand_list.gather(dim=2, index=gathering_index).squeeze(dim=2)
+        except RuntimeError as e:
+            print(f'RuntimeError: {e}')
         # shape: (batch, pomo)
 
         self.load -= selected_demand
