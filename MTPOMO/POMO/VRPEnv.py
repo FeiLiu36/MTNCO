@@ -2,7 +2,7 @@
 from dataclasses import dataclass
 import torch
 
-from MTPOMO.VRProblemDef import get_random_problems_mixed, augment_xy_data_by_8_fold
+from VRProblemDef import get_random_problems_mixed, augment_xy_data_by_8_fold
 
 
 @dataclass
