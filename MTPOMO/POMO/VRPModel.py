@@ -130,7 +130,7 @@ class VRP_Encoder(nn.Module):
         # shape: (batch, 1, embedding)
         embedded_node = self.embedding_node(node_xy_demand_TW)
         # input shape: (batch, problem, 5)
-        # 6 features are: x_coord, y_coord, demands, earlyTW, lateTW
+        # 5 features are: x_coord, y_coord, demands, earlyTW, lateTW
         # embedded_node shape: (batch, problem, embedding)
 
         out = torch.cat((embedded_depot, embedded_node), dim=1)
