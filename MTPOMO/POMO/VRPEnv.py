@@ -236,7 +236,7 @@ class VRPEnv:
         # shape: (batch, pomo)
         self.length = 3.0*torch.ones(size=(self.batch_size, self.pomo_size))
         # # shape: (batch, pomo)
-        self.route_open = torch.zeros((self.batch_size, self.pomo_size))
+        # self.route_open = torch.zeros((self.batch_size, self.pomo_size))
         # shape: (batch, pomo)
         self.visited_ninf_flag = torch.zeros(size=(self.batch_size, self.pomo_size, self.problem_size+1))
         # shape: (batch, pomo, problem+1)
