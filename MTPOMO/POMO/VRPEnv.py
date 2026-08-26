@@ -245,6 +245,9 @@ class VRPEnv:
         self.finished = torch.zeros(size=(self.batch_size, self.pomo_size), dtype=torch.bool)
         # shape: (batch, pomo)
 
+        self.route_open = torch.ones(size=(self.batch_size, self.pomo_size))
+        # shape: (batch, pomo)
+
         reward = None
         done = False
         return self.reset_state, reward, done
